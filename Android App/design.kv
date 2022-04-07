@@ -1,0 +1,22 @@
+
+MDBoxLayout:
+	orientation: "vertical"
+	padding: 20
+
+	MDLabel:
+		text: "App Name"
+		font_size: 40
+		size_hint_y: .5
+		halign: "center"
+		valign: "middle"
+
+		canvas.before:
+			Color:
+				rgba: app.theme_cls.primary_color
+			RoundedRectangle:
+				pos: self.pos
+				size: self.size
+				radius: [20,]
+
+	MDBoxLayout:
+
